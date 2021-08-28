@@ -16,7 +16,7 @@ public class PageRequestDto {
 
     public PageRequestDto(){
         this.page=1;
-        this.page=10;
+        this.size=10;
     }
     public Pageable getPageable(Sort sort){
         return PageRequest.of(page-1, size, sort);
